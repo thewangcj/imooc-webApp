@@ -1,0 +1,27 @@
+{
+  "name": "webapp",
+  "description": "anjularjs webapp imooc",
+  "main": "",
+  "keywords": [
+    "anjualrjs",
+    "imooc",
+    "webapp"
+  ],
+  "authors": [
+    "wcj"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.6.5",
+    "angular-ui-router": "ui-router#^0.4.2",
+    "angular-cookies": "1.6.5"
+  }
+}

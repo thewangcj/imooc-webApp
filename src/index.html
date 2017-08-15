@@ -1,0 +1,21 @@
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <!--适应移动页面大小  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>webapp</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <div ui-view></div>
+    <script>
+        // 移动页面自适应
+        document.getElementsByTagName('html')[0].style.fontSize = window.screen.width/10 + 'px';
+    </script>
+    <script type="text/javascript" src="vendor/angular/angular.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="vendor/angular-cookies/angular-cookies.js"></script>
+    <!--引用路由模块  -->
+    <script type="text/javascript" src="vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

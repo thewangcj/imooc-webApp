@@ -1,0 +1,27 @@
+@import '../variable.less';
+
+.head{
+    background-color: @headBgColor;
+    .h(40);
+    .lh(40);
+    padding: 0 7px;
+    // line-height: 100%;
+    .text{
+        color: @defaultColor;
+        padding-left: 7px;
+    }
+    .custom{
+        background-color: @warnClolr;
+        color: @defaultColor;
+        border-color:@warnClolr;
+        border-style: dashed;
+        .mt(7);
+        .pl(25);
+        .pr(25);
+    }
+    .back-btn{
+        font-size: 20px;
+        width: 1rem;
+        left: 0;
+    }
+}
