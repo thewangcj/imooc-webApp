@@ -1,0 +1,9 @@
+<div class="search-bar">
+    <button ng-click="name='';search()">取消</button>
+    <input ng-model="name" type="text" placeholder="搜索职位/公司/城市">
+    <button ng-click="search()">搜索</button>
+</div>
+<div app-tab></div>
+<div class="search-list" app-position-list data="positionList"></div>
+<div app-foot></div>
+<div app-sheet></div>

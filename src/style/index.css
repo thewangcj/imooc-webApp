@@ -88,6 +88,37 @@
   right: 24px;
   top: 40px;
 }
+.position-class {
+  background-color: #fff;
+  border-top: 1px solid #d4d4d4;
+  padding: 13px 9px 5px 9px;
+}
+.position-class h5 {
+  margin: 0 0 35px 0;
+}
+.position-class button {
+  background-color: #def8f5;
+  border-radius: 20px;
+  padding: 10px 23px;
+  margin-right: 11px;
+}
+.position-class button.active {
+  background-color: #12d5b5;
+  color: #fff;
+}
+.position-class ul {
+  border-top: 1px solid #d4d4d4;
+  margin: 5 0 0 0;
+  padding: 0;
+}
+.position-class ul li {
+  list-style: none;
+}
+.position-class ul li span {
+  color: red;
+  right: 10px;
+  top: 20px;
+}
 .company-info {
   border-bottom: 1px solid #ccc;
   padding: 10px 15px 13px 85px;
@@ -99,6 +130,27 @@
 }
 .company-info p {
   margin-top: 0;
+}
+.tab {
+  background-color: #f7f7f7;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  margin-top: 1.06666667rem;
+  font-size: 0;
+}
+.tab li {
+  font-size: 0.37333333rem;
+  width: 33.33%;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+  border-bottom: 2px solid #f7f7f7;
+}
+.tab li.active {
+  border-bottom: 2px solid #12d5b5;
 }
 .buttom-btn {
   position: fixed;
@@ -123,6 +175,7 @@
 .position-desc pre {
   padding-left: 10px;
   margin-left: 0;
+  padding-bottom: 20px;
 }
 .bg-w {
   background-color: #fff;
@@ -171,6 +224,42 @@
 }
 .va-m {
   vertical-align: middle;
+}
+.search-bar {
+  background-color: #12d5b5;
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+}
+.search-bar img {
+  transform: scale(0.6);
+}
+.search-bar input {
+  background-color: #eee;
+  border-radius: 80px;
+  border-style: none;
+  box-sizing: border-box;
+  outline-width: 0;
+  padding-left: 0.53333333rem;
+  height: 0.66666667rem;
+  width: 5.06666667rem;
+}
+.search-bar button {
+  background-color: #12d5b5;
+}
+.search-bar button:first-child {
+  color: #fff;
+}
+.search-bar button:last-child {
+  background-image: url(../image/search.png);
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: 0 4px;
+  color: #9f9e9d;
+  padding-left: 20px;
+  margin-left: 10px;
 }
 body {
   font-size: 0.42666667rem;
