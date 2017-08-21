@@ -8,6 +8,20 @@
     top: 0;
     bottom: 0;
     form{
+        .ng-invalid{
+            &+span{
+                background-color: transparent;
+                position: absolute;
+                color:@dangerColor;
+                right: 0;
+                height: 100%;
+                font-size: 12px;
+                text-align: right;
+                p{
+                    margin: 0;
+                }
+            }
+        }
         .mt(260);
         .form-line{
             margin-left: auto;
@@ -21,7 +35,7 @@
             &:first-child{
                 border-bottom: 1px solid @defaultColor;
             }
-            span{
+            .icon{
                 background-position: 20px 10px;
                 background-color:@iconBgColor;
                 height: 100%;
@@ -39,6 +53,7 @@
                 border-width: 0;
                 outline-width: 0;
                 background-color: @formBgColor;
+                color: @defaultColor;
                 height: 100%;
                 .w(245);
                 .fs(14);
