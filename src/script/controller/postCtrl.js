@@ -9,5 +9,22 @@ angular.module('app').controller('postCtrl',['$http','$scope',function($http,$sc
   },{
     id: 'fail',
     name : '不合适'
-  }]
+  }];
+  $http.get('data/myPost.json').then(function(res){
+    $scope.positionList = res.data;
+  });
+  $scope.filterObj = {};
+  $scope.tClick = function(id,name){
+    switch(id){
+      case 'all':
+        delete $scope.filterObj.state;
+        break;
+      case 'pass':
+        $scope.filterObj.state = '1';
+        break;
+      case 'fail':
+        $scope.filterObj.state = '-1';
+        break; 
+    }
+  }
 }]);
