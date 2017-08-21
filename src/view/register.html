@@ -1,0 +1,19 @@
+<div class="register ta-c">
+        <form class="d-b ta-c" name="form">
+            <div class="form-line ta-l p-r">
+                <span class="icon account va-t d-ib"></span>
+                <input ng-model="user.phone" validator="phone" type="text" placeholder="请输入手机号" class="d-ib">
+            </div>
+            <div class="form-line ta-l p-r">
+                <span class="icon lock va-t d-ib"></span>
+                <input ng-model="user.password" validator="password" type="password" placeholder="设置六位数以上的密码" class="d-ib">
+            </div>
+
+            <div class="message-wrap ta-l">
+                <input class="message-box" type="text" placeholder="短信验证码">
+                <span class="message f-r">发送短信</span>
+            </div>
+            <button class="login-btn">登录</button>
+            <button class="register-btn" validation-submit = "form" ng-click="submit()">注册</button>
+        </form>
+    </div>

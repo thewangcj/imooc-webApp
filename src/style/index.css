@@ -152,6 +152,45 @@
 .tab li.active {
   border-bottom: 2px solid #12d5b5;
 }
+.sheet {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.sheet .wrap {
+  position: fixed;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  z-index: 100;
+}
+.sheet li,
+.sheet button {
+  color: #1063e5;
+  background-color: #f1f2f3;
+  height: 1.33333333rem;
+  line-height: 1.33333333rem;
+  font-size: 0.42666667rem;
+  width: 100%;
+}
+.sheet button {
+  border-radius: 5px;
+  margin-top: 8px;
+}
+.sheet ul {
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  max-height: 500px;
+}
+.sheet ul li {
+  list-style: none;
+  border-bottom: 1px solid #d4d4d4;
+}
 .buttom-btn {
   position: fixed;
   height: 1.2rem;
@@ -230,6 +269,7 @@
   position: fixed;
   left: 0;
   right: 0;
+  top: 0;
   height: 1.06666667rem;
   line-height: 1.06666667rem;
 }
@@ -260,6 +300,147 @@
   color: #9f9e9d;
   padding-left: 20px;
   margin-left: 10px;
+}
+.search-list {
+  margin-top: 2.13333333rem;
+}
+.login {
+  background-image: url("../image/background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.login form {
+  margin-top: 6.93333333rem;
+}
+.login form .form-line {
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: content-box;
+  font-size: 0;
+  width: 8rem;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+  color: #fff;
+}
+.login form .form-line:first-child {
+  border-bottom: 1px solid #fff;
+}
+.login form .form-line span {
+  background-position: 20px 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 1.46666667rem;
+}
+.login form .form-line .account {
+  background-image: url("../image/account.png");
+  background-repeat: no-repeat;
+}
+.login form .form-line .lock {
+  background-image: url("../image/lock.png");
+  background-repeat: no-repeat;
+}
+.login form .form-line input {
+  border-width: 0;
+  outline-width: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 6.53333333rem;
+  font-size: 0.37333333rem;
+  padding-left: 0.8rem;
+}
+.login form .form-line input::-webkit-input-placeholder {
+  color: #fff;
+}
+.login form button {
+  width: 8rem;
+  height: 0.93333333rem;
+  font-weight: bold;
+  font-size: 22px;
+}
+.login form button.login-btn {
+  background-color: #12d5b5;
+  color: #fff;
+  margin-top: 70px;
+}
+.login form button.register-btn {
+  margin-top: 20px;
+  background-color: rgba(18, 213, 181, 0.2);
+  color: #12d5b5;
+  border: 1px solid #12d5b5;
+}
+.register {
+  background-image: url("../image/background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.register form {
+  margin-top: 1.46666667rem;
+}
+.register form .form-line {
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: content-box;
+  font-size: 0;
+  width: 8rem;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+  color: #fff;
+}
+.register form .form-line:first-child {
+  border-bottom: 1px solid #fff;
+}
+.register form .form-line span {
+  background-position: 20px 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 1.46666667rem;
+}
+.register form .form-line .account {
+  background-image: url("../image/account.png");
+  background-repeat: no-repeat;
+}
+.register form .form-line .lock {
+  background-image: url("../image/lock.png");
+  background-repeat: no-repeat;
+}
+.register form .form-line input {
+  border-width: 0;
+  outline-width: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 6.53333333rem;
+  font-size: 0.37333333rem;
+  padding-left: 0.8rem;
+}
+.register form .form-line input::-webkit-input-placeholder {
+  color: #fff;
+}
+.register form button {
+  width: 8rem;
+  height: 0.93333333rem;
+  font-weight: bold;
+  font-size: 22px;
+}
+.register form button.login-btn {
+  background-color: #12d5b5;
+  color: #fff;
+  margin-top: 60px;
+}
+.register form button.register-btn {
+  margin-top: 20px;
+  background-color: rgba(18, 213, 181, 0.2);
+  color: #12d5b5;
+  border: 1px solid #12d5b5;
 }
 body {
   font-size: 0.42666667rem;
