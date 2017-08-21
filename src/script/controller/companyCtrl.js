@@ -1,6 +1,6 @@
 'use strict';
 angular.module('app').controller('companyCtrl',['$scope','$http','$state',function($scope,$http,$state){ 
-  $http.get('/json/company.json?id='+$state.params.id).then(function(res){
+  $http.get('/data/company.json?id='+$state.params.id).then(function(res){
     //console.log(res.data);
     $scope.company = res.data;
     //$scope.$broadcast('abc',{id:1});

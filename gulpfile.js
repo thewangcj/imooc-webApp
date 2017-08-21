@@ -28,8 +28,8 @@ gulp.task('html',function(){
 // 拷贝JSON
 gulp.task('json',function(){
      gulp.src(app.srcPath+'data/**/*.json')
-     .pipe(gulp.dest(app.devPath+'json'))
-     .pipe(gulp.dest(app.prdPath+'json'))
+     .pipe(gulp.dest(app.devPath+'data'))
+     .pipe(gulp.dest(app.prdPath+'data'))
      .pipe($.connect.reload());
 });
 
@@ -50,7 +50,7 @@ gulp.task('js',function(){
      .pipe($.plumber())
      .pipe($.concat('index.js'))
      .pipe(gulp.dest(app.devPath+'js'))
-     .pipe($.uglify())
+    //  .pipe($.uglify())
      .pipe(gulp.dest(app.prdPath+'js'))
      .pipe($.connect.reload());
 });
