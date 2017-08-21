@@ -10,10 +10,11 @@
             </div>
 
             <div class="message-wrap ta-l">
-                <input class="message-box" type="text" placeholder="短信验证码">
-                <span class="message f-r">发送短信</span>
+                <input ng-model="user.code" class="message-box" type="text" placeholder="短信验证码">
+                <span class="message f-r {{time?'disabled':''}}" ng-click="time?1==1:send()" ng-bind="time?time:'发送短信'"></span>
+                <div class="clear"></div>
             </div>
-            <button class="login-btn">登录</button>
+            <button class="login-btn" ui-sref="login">登录</button>
             <button class="register-btn" validation-submit = "form" ng-click="submit()">注册</button>
         </form>
     </div>
