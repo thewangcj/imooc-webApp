@@ -8,6 +8,20 @@
     top: 0;
     bottom: 0;
     form{
+        .ng-invalid{
+            &+span{
+                background-color: transparent;
+                position: absolute;
+                color:@dangerColor;
+                right: 0;
+                height: 100%;
+                font-size: 12px;
+                text-align: right;
+                p{
+                    margin: 0;
+                }
+            }
+        }
         .mt(55);
         .form-line{
             margin-left: auto;
@@ -48,20 +62,7 @@
                 &::-webkit-input-placeholder{
                     color: @defaultColor;
                 }
-                &.ng-invalid{
-                    &+span{
-                        background-color: transparent;
-                        position: absolute;
-                        color:@dangerColor;
-                        right: 0;
-                        height: 100%;
-                        font-size: 12px;
-                        text-align: right;
-                        p{
-                            margin: 0;
-                        }
-                    }
-                }
+                
             }
         }
         .message-wrap{
@@ -73,6 +74,7 @@
                 border-width: 0;
                 outline-width: 0;
                 background-color: @formBgColor;
+                color: @defaultColor;
                 .h(40);
                 .w(190);
                 .fs(14);
