@@ -1,14 +1,14 @@
 'use strict';
-angular.module('app').directive('appHeadBar',[function(){
-  return{
-    restrict:'A',   // A代表属性
-    replace:true,   // 代替父属性
-    templateUrl:'view/template/headBar.html',
-    scope:{
-      text:'@'
+angular.module('app').directive('appHeadBar', [function () {
+  return {
+    restrict: 'A', // A代表属性
+    replace: true, // 代替父属性
+    templateUrl: 'view/template/headBar.html',
+    scope: {
+      text: '@'
     },
-    link:function($scope){
-      $scope.back = function(){
+    link: function ($scope) {
+      $scope.back = function () {
         window.history.back();
       }
       // 事件机制

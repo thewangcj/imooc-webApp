@@ -1,48 +1,63 @@
 .bg-w {
   background-color: #fff;
 }
+
 .c-w {
   color: #fff;
 }
+
 .clear {
   clear: both;
 }
+
 .c-r {
   color: red;
 }
+
 .d-ib {
   display: inline-block;
 }
+
 .d-b {
   display: block;
 }
+
 .f-l {
   float: left;
 }
+
 .f-r {
   float: right;
 }
+
 .p-a {
   position: absolute;
 }
+
 .p-r {
   position: relative;
 }
+
 .ta-l {
   text-align: left;
 }
+
 .ta-r {
   text-align: right;
 }
+
 .ta-c {
   text-align: center;
 }
+
 .va-t {
   vertical-align: top;
 }
+
 .va-b {
   vertical-align: bottom;
 }
+
 .va-m {
   vertical-align: middle;
 }

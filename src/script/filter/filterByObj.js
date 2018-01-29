@@ -1,15 +1,15 @@
 'use strict';
-angular.module('app').filter('filterByObj', [function(){
-  return function(list, obj) {
+angular.module('app').filter('filterByObj', [function () {
+  return function (list, obj) {
     var result = [];
-    angular.forEach(list, function(item){
+    angular.forEach(list, function (item) {
       var isEqual = true;
-      for(var e in obj){
-        if(item[e]!==obj[e]) {
+      for (var e in obj) {
+        if (item[e] !== obj[e]) {
           isEqual = false;
         }
       }
-      if(isEqual) {
+      if (isEqual) {
         result.push(item);
       }
     });

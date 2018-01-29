@@ -1,12 +1,12 @@
 'use strict';
-angular.module('app').config(['$validationProvider',function($validationProvider){
+angular.module('app').config(['$validationProvider', function ($validationProvider) {
   var expresssion = {
     phone: /^1[\d]{10}$/,
-    password: function(value){
+    password: function (value) {
       var str = value + '';
       return str.length > 5;
     },
-    required:function(value){
+    required: function (value) {
       return !!value; //!!等同于 value||false
     }
   };
